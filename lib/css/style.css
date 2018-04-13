@@ -23,6 +23,18 @@
 	cursor: pointer;
 }
 
+.file:hover .fa-trash-alt{
+	display: block;
+}
+
+.file:hover .fa-copy{
+	display: block;
+}
+
+.file:hover .fa-edit{
+	display: block;
+}
+
 .file > img {
 	position: absolute;
 	top: 62.5px;
@@ -57,6 +69,46 @@
 	right: 8%;
 }
 
-#upload_file{
+input[type='file']{
 	display: none;
+}
+
+label{
+	cursor: pointer;
+}
+
+.fa-trash-alt{
+	position: absolute;
+	display: none;
+	top: 10px;
+	font-size: 1.5em;
+	left: 10px;
+}
+
+.fa-copy{
+	position: absolute;
+	display: none;
+	top: 10px;
+	font-size: 1.5em;
+	right: 10px;
+}
+
+.fa-check-circle{
+	position: absolute;
+	top: 10px;
+	font-size: 1.5em;
+	right: 10px;
+}
+
+.fa-edit{
+	position: absolute;
+	top: 10px;
+	font-size: 1.5em;
+	right: 40px;
+	display: none;
+}
+
+.icon:hover{
+	color: rgb(83,109,254);
+	transition: 0.3s;
 }
